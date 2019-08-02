@@ -42,7 +42,8 @@ section {
 .inner-skew {
   transform: skewY(7deg);
   margin: 10rem 0;
-  color: #eee; }
+  color: #eee;
+  z-index: 22; }
 
 footer {
   background-image: linear-gradient(to bottom right, #0896f9, #321766);

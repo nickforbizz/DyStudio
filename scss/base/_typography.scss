@@ -38,7 +38,8 @@ section
 {
     transform: skewY(7deg);
     margin: 10rem 0;
-    color: $color-grey-white
+    color: $color-grey-white;
+    z-index: 22;
 }
 
 footer
