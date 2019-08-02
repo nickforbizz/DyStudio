@@ -1,0 +1,18 @@
+{
+  "name": "DyStudio",
+  "version": "1.0.0",
+  "description": "Tutorials to do things",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/master.css -w"
+  },
+  "author": "Wainaina Nicholas",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^3.4.1"
+  }
+}

@@ -1,0 +1,171 @@
+.icard
+{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    height: 60rem;
+    position: relative;
+
+    &__side
+    {
+        background-color: $color-primary;
+        color: $color-white;
+        position: absolute;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        height: 60rem;
+        width: 100%;
+        overflow: hidden;
+        backface-visibility: hidden;
+        transition: all .9s ease;
+
+        &--1{
+            // background-image: linear-gradient(to top right, $color-white, $color-grey-blue);
+            
+        }
+
+        &--2
+        {
+            transform: rotateY(-180deg);
+
+            &--01
+            {
+                background-image: linear-gradient(to top right, $color-blue, $color-green);
+            }
+
+            &--02
+            {
+                background-image: linear-gradient(to top right, $color-yellow, $color-brown);
+            }
+
+            &--03
+            {
+                background-image: linear-gradient(to top right, $color-dark-blue, $color-pink);
+            }
+            
+    
+        }
+    }
+
+
+    &:hover &__side--1
+    {
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side--2
+    {
+        transform: rotateY(0);
+    }
+
+
+    // pictures
+    &__picture
+    {
+        height: 25rem;
+        background-size: cover;
+        -webkit-background-blend-mode: color;
+        background-blend-mode: color;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1{
+            background-image: linear-gradient(to top right, $color-blue, $color-green), 
+            url("../../imgs/black_skull-wallpaper-2560x1440.jpg");
+        }
+
+        &--2{
+            background-image: linear-gradient(to top right, $color-yellow, $color-brown), 
+            url("../../imgs/abstract_maze_2-wallpaper-1920x1080.jpg"); 
+        }
+
+        &--3{
+            background-image: linear-gradient(to top right, $color-dark-blue, $color-pink), 
+            url("../../imgs/dj_mouse-wallpaper-1920x1080.jpg"); 
+        }
+    }
+
+    // details
+    &__heading
+    {
+        position: absolute;
+        right: .5rem;
+        top: 20rem;
+        text-transform: uppercase;
+        font-size: 3.4rem;
+        
+    }
+
+    &__heading--span
+    {
+        padding: .5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1
+        {
+            background-image: linear-gradient(to top left, rgba($color-blue, 0.8), rgba($color-green, 0.8));
+        }
+
+        &--2
+        {
+            background-image: linear-gradient(to top left, rgba($color-yellow, 0.8), rgba($color-brown, 0.8));
+        }
+
+        &--3
+        {
+            background-image: linear-gradient(to top left, rgba($color-dark-blue, 0.8), rgba($color-pink, 0.8));
+        }
+    }
+
+    &__details
+    {
+        text-align: center;
+        padding-top: 2rem;
+
+        ul
+        {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li
+            {
+                text-align: center;
+                padding: 1rem;
+                color: $color-white;
+                font-size: 1.5rem;
+
+                &:not(:last-child)
+                {
+                    border-bottom: 1px solid $color-grey-blue;
+                }
+            }
+        }
+    }
+
+    // link
+    &__link
+    {
+        position: absolute;
+        bottom: 3rem;
+        right: 3rem;
+        font-size: x-large;
+    }
+
+    // payments
+    &__payment
+    {
+        @include center-element;
+
+        .btn-book
+        {
+            padding: 3rem;
+        }
+    }
+
+    &__price--value
+    {
+        font-size: xx-large;
+        font-weight: 400;
+    }
+}

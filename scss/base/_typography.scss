@@ -1,0 +1,107 @@
+
+main
+{
+    position: relative;
+}
+section
+{
+    margin-top: 8rem;
+    min-height: 30rem;
+}
+
+.icon-lg
+{
+    font-size: xx-large;
+    padding: 1rem
+}
+
+.elem--header{
+    color: $color-grey-white;
+}
+.h-primary
+{ 
+    
+    @include bg-text($color-primary, $color-secondary);
+    
+}
+
+.outer-skew
+{
+    transform: skewY(-7deg);
+    background-image: linear-gradient(to bottom right, $color-primary, $color-secondary),
+    url("../../imgs/dj_mouse-wallpaper-1920x1080.jpg");
+    margin-top: 18rem;
+    margin-bottom: 18rem;
+}
+
+.inner-skew
+{
+    transform: skewY(7deg);
+    margin: 10rem 0;
+    color: $color-grey-white
+}
+
+footer
+{
+    background-image: linear-gradient(to bottom right, $color-primary, $color-secondary);
+    padding: 7rem;
+    color: $color-grey-white;
+
+}
+
+
+
+
+// pull to events
+.event-card
+{
+    height: 41rem;
+    margin: 1rem 0;
+
+    &__inner
+    {
+        margin: 1rem;
+        background-color: $color-dark;
+        height: 98%;
+        position: relative;
+        overflow: hidden;
+        transform: all 1s ease;
+
+        &:hover &--textlink
+            {
+            top: 10%;
+
+            }
+
+        &--textlink
+        {
+            position: absolute;
+            text-align: -webkit-center;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100%;
+         
+            h4 button
+            {
+                position: absolute;
+                top: 2rem
+            }
+        }
+    }
+}
+
+
+.events-booking
+{
+    .outer-layer
+    {
+        background-image: url("../../imgs/camouflage_desktop-wallpaper-2560x1440.jpg");
+        background-size: cover;
+        padding: 4rem 0;
+    }
+}
+
+#contact-form
+{
+    margin-bottom: 2rem;
+}
