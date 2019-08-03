@@ -26,6 +26,7 @@ section {
   color: #eee; }
 
 .h-primary {
+  padding: 0rem 1rem;
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to right, #0896f9, #321766);
   display: inline-block;
@@ -49,36 +50,6 @@ footer {
   background-image: linear-gradient(to bottom right, #0896f9, #321766);
   padding: 7rem;
   color: #eee; }
-
-.event-card {
-  height: 41rem;
-  margin: 1rem 0; }
-  .event-card__inner {
-    margin: 1rem;
-    background-color: #080808;
-    height: 98%;
-    position: relative;
-    overflow: hidden;
-    transform: all 1s ease; }
-    .event-card__inner:hover .event-card__inner--textlink {
-      top: 10%; }
-    .event-card__inner--textlink {
-      position: absolute;
-      text-align: -webkit-center;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 100%; }
-      .event-card__inner--textlink h4 button {
-        position: absolute;
-        top: 2rem; }
-
-.events-booking .outer-layer {
-  background-image: url("../../imgs/camouflage_desktop-wallpaper-2560x1440.jpg");
-  background-size: cover;
-  padding: 4rem 0; }
-
-#contact-form {
-  margin-bottom: 2rem; }
 
 /* reused classes */
 .flex-h {
@@ -130,12 +101,10 @@ footer {
   color: white;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
 
-.h-big {
-  padding: 3rem 0 2rem 0; }
-  .h-big__header {
-    color: #eee;
-    font-weight: 700;
-    font-size: 3.5rem; }
+.h-big__header {
+  color: #eee;
+  font-weight: 700;
+  font-size: 3.5rem; }
 
 .bg-white {
   background-color: #fff;
@@ -146,6 +115,15 @@ footer {
 
 .h-30 {
   height: 30rem; }
+
+.mt-7 {
+  margin-top: 7rem; }
+
+.mt-15 {
+  margin-top: 15rem; }
+
+.mt-20 {
+  margin-top: 20rem; }
 
 .float-bottom {
   padding: 6rem 10rem;
@@ -178,7 +156,49 @@ footer {
 
 .btn-smart {
   padding: 2rem;
-  min-width: 3rem; }
+  min-width: 15rem;
+  border-radius: 20rem; }
+
+.btn-smart-bl {
+  padding: 2rem;
+  min-width: 15rem;
+  border-bottom-left-radius: 20rem; }
+
+.underline-parent {
+  position: relative; }
+
+.underline::after {
+  content: "";
+  border: 1px solid grey;
+  bottom: -2rem;
+  left: 0;
+  width: 100%;
+  position: absolute; }
+
+.btn-animate__white {
+  min-width: 19rem;
+  padding: 1.3rem;
+  border-radius: 15rem;
+  font-weight: 700; }
+
+.img-around {
+  border-radius: 50%;
+  height: 30rem;
+  width: 30rem;
+  overflow: hidden; }
+  .img-around img {
+    height: inherit; }
+
+.flex {
+  display: flex; }
+  .flex__order1 {
+    order: 1; }
+  .flex__order1 {
+    order: 2; }
+  .flex__order1 {
+    order: 3; }
+  .flex__order1 {
+    order: 4; }
 
 .green {
   background-color: #6fb936; }
@@ -297,7 +317,7 @@ img.zoom {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 360px;
-  height: 400px;
+  height: 35rem;
   background: #000; }
 
 .card_hover .image {
@@ -394,9 +414,9 @@ blockquote {
   box-shadow: 2px 2px 2px 2px #E0E0E0; }
 
 .quotation-mark {
-  margin-top: -10px;
+  margin-top: -1rem;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 7.5rem;
   color: white;
   font-family: "Times New Roman", Georgia, Serif; }
 
@@ -449,14 +469,125 @@ blockquote {
   width: 99%;
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  color: #0896f9;
+  background-color: #55678a2b; }
 
 .contacts__details {
   box-shadow: 2px 2px 10px 1px #080808;
   height: 40rem;
   width: 99%;
   padding: 10px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  background-color: #55678a2b; }
+
+.contacts__bg {
+  background-image: url("../../imgs/camouflage_desktop-wallpaper-2560x1440.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: .51rem; }
+  .contacts__bg--shadow {
+    box-shadow: 2px 2px 73px 1px #080808;
+    padding: 6rem 0; }
 
 .gallery {
   margin: 3rem; }
+
+.activities__about {
+  margin: 14rem 0;
+  font-size: 1.6rem; }
+  .activities__about--btn {
+    margin-left: 3rem;
+    margin-top: 4rem; }
+  .activities__about__img--top {
+    margin-top: -11rem; }
+    @media only screen and (max-width: 770px) {
+      .activities__about__img--top {
+        display: none; } }
+
+.activities_container {
+  position: relative; }
+  .activities_container__header h3 {
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, #0896f9, #321766);
+    display: inline-block;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .activities_container__box--tab {
+    position: relative;
+    height: 30rem; }
+  .activities_container__box--side {
+    position: absolute;
+    height: inherit;
+    top: -3rem;
+    width: 35%;
+    background-image: linear-gradient(to right bottom, #0896f9, #321766);
+    right: -3rem; }
+    .activities_container__box--side ul {
+      width: -webkit-fill-available;
+      margin: 0; }
+    @media only screen and (max-width: 770px) {
+      .activities_container__box--side {
+        display: inline;
+        top: 23rem;
+        width: fit-content;
+        height: fit-content;
+        right: 0; } }
+  .activities_container__details {
+    padding: 1rem; }
+    .activities_container__details--head h3 {
+      position: relative;
+      padding-bottom: 5rem; }
+      .activities_container__details--head h3 span {
+        padding: 1.7rem;
+        min-width: 11rem;
+        color: #fff;
+        background-image: linear-gradient(to left bottom, #0896f9, #321766);
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 20% 100%, 0 50%);
+        text-align: -webkit-right; }
+    .activities_container__details--text {
+      text-align: -webkit-right;
+      margin-top: 4rem; }
+    @media screen and (max-width: 700px) {
+      .activities_container__details {
+        margin-top: 10rem; } }
+  .activities_container__more {
+    border-top: 2px solid gainsboro;
+    margin: 6rem; }
+
+.activities_cat {
+  margin: 10rem 0; }
+
+.event-card {
+  height: 41rem;
+  margin: 1rem 0; }
+  .event-card__inner {
+    margin: 1rem;
+    background-color: #080808;
+    height: 98%;
+    position: relative;
+    overflow: hidden;
+    transform: all 1s ease; }
+    .event-card__inner:hover .event-card__inner--textlink {
+      top: 10%; }
+    .event-card__inner--textlink {
+      position: absolute;
+      text-align: -webkit-center;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 100%; }
+      .event-card__inner--textlink h4 button {
+        position: absolute;
+        top: 2rem; }
+
+.booking {
+  margin-bottom: 12rem; }
+
+.events-booking .outer-layer {
+  background-image: url("../../imgs/camouflage_desktop-wallpaper-2560x1440.jpg");
+  background-size: cover;
+  padding: 4rem 0; }
+
+#contact-form {
+  margin-bottom: 2rem; }

@@ -1,0 +1,56 @@
+// events pages
+.event-card
+{
+    height: 41rem;
+    margin: 1rem 0;
+
+    &__inner
+    {
+        margin: 1rem;
+        background-color: $color-dark;
+        height: 98%;
+        position: relative;
+        overflow: hidden;
+        transform: all 1s ease;
+
+        &:hover &--textlink
+            {
+            top: 10%;
+
+            }
+
+        &--textlink
+        {
+            position: absolute;
+            text-align: -webkit-center;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100%;
+         
+            h4 button
+            {
+                position: absolute;
+                top: 2rem
+            }
+        }
+    }
+}
+
+.booking
+{
+    margin-bottom: 12rem;
+}
+.events-booking
+{
+    .outer-layer
+    {
+        background-image: url("../../imgs/camouflage_desktop-wallpaper-2560x1440.jpg");
+        background-size: cover;
+        padding: 4rem 0;
+    }
+}
+
+#contact-form
+{
+    margin-bottom: 2rem;
+}

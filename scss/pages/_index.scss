@@ -27,6 +27,8 @@
         padding: 10px;
         border-radius: 5px;
         margin-bottom: 2rem;
+        color: $color-primary;
+        background-color: #55678a2b;
     }
 
     &__details
@@ -36,8 +38,22 @@
         width: 99%;
         padding: 10px;
         border-radius: 5px;
+        background-color: #55678a2b;
 
+    }
 
+    &__bg
+    {
+        background-image: url("../../imgs/camouflage_desktop-wallpaper-2560x1440.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: .51rem;
+
+        &--shadow
+        {
+            box-shadow: 2px 2px 73px 1px #080808;
+            padding: 6rem 0;
+        }
     }
 }
 
