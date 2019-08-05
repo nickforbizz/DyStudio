@@ -1,0 +1,130 @@
+.tools-box {
+    margin-top: 2rem;
+    border-top: 1px solid grey;
+    padding: 6px;
+}
+
+.tools-details__images {
+    margin: 2rem 0 0 2rem;
+    position: relative;
+    height: 25rem;
+    overflow: hidden;
+    &--1 {
+        position: absolute;
+        top: 3rem;
+        left: 6rem;
+        z-index: 0;
+        transition: all 1s ease-in;
+        img {
+            height: 20rem;
+            width: 25rem;
+        }
+        &:hover {
+            z-index: 22;
+            cursor: pointer;
+            outline: .9rem solid $color-primary;
+            outline-offset: .6rem;
+        }
+    }
+    &--2 {
+        position: absolute;
+        img {
+            height: 20rem;
+            width: 25rem;
+        }
+    }
+    &--3 {
+        position: absolute;
+        left: 3rem;
+        top: -4rem;
+        img {
+            height: 20rem;
+        }
+    }
+}
+
+.tools-details__descp {
+    padding: 2rem;
+    position: relative;
+    &--header {
+        h4 {
+            span {
+                padding: 1rem 2rem;
+                border-bottom: .2rem solid grey;
+            }
+        }
+    }
+    &--text {
+        // padding: .4rem;
+        margin-top: 2rem;
+    }
+    &--more {
+        margin-top: 4rem;
+        margin-right: 6rem;
+        button {
+            background-color: $color-primary;
+            color: $color-white;
+            padding: 1rem;
+        }
+    }
+}
+
+// banner bottom
+.banner-bottom-contain {
+    background-color: $color-primary;
+    min-height: 30rem;
+    &__box1,
+    &__box2 {
+        margin-top: 5rem;
+        height: 25rem;
+    }
+    &__subscribe {
+        form {
+            #subscribe {
+                border: .1rem;
+                border-radius: 40rem;
+                padding: 1rem 3rem;
+                width: -webkit-fill-available;
+            }
+            p {
+                font-size: large;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+            div {
+                margin-top: 2rem;
+                backface-visibility: hidden;
+                transition: all 1s ease-in;
+                &:hover {
+                    transform: translateY(-.5rem);
+                }
+                input {
+                    background-color: $color-secondary;
+                    color: $color-white;
+                    padding: 1rem 0;
+                    transition: all 1s ease-in;
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    &__quicklinks,
+    &__selfservice {
+        padding: 1rem;
+        ul {
+            list-style: none;
+            li {
+                padding: .5rem 0;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    &__selfservice {
+        padding: 1rem;
+    }
+}

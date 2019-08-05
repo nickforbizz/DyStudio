@@ -1,0 +1,78 @@
+.page-banner {
+    position: relative;
+    background: url(https://www.fillmurray.com/300/900) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    /* hide overflowing bits of circle */
+    min-height: 95vh;
+    /* just give enough height to fit text at smallest screen width size */
+}
+
+.circle {
+    background-color: $color-primary;
+    /* use rgba for transparent effect */
+    color: white;
+    transform: translate(-50%, -50%);
+    /* move the circle left 50% of it's own width and up 50% of it's own height */
+    border-radius: 50%;
+    padding-top: 100%;
+    /* this gives us a responsive square */
+    position: absolute;
+    top: 50%;
+    /* this vertically centers the circle */
+    left: 0;
+    width: 100%;
+    min-width: 40%;
+    /* this is the miniimum dimensions to allow circle to fill smaller screens */
+    min-height: 95vh;
+    z-index: 22;
+}
+
+.page-banner-text {
+    position: absolute;
+    /* just positions the text on the right of the cirecle */
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2em;
+    width: 40%;
+}
+
+.banner-images {
+    top: 4rem;
+    background: $color-primary;
+    position: absolute;
+    max-width: 65%;
+    right: 0;
+    height: 85vh;
+}
+
+@media screen and (max-width: 750px) {
+    .banner-images {
+        max-width: 85% !important;
+    }
+}
+
+.arrow-left-carousel,
+.arrow-right-carousel {
+    span {
+        position: absolute;
+        opacity: 1;
+        right: 4rem;
+        bottom: 11rem;
+        background: #0caabf;
+        border-radius: 34rem;
+        padding: 2rem;
+    }
+}
+
+.arrow-left-carousel {
+    span {
+        right: 16rem;
+        bottom: 9rem;
+        background: #0caabf;
+        border-radius: 34rem;
+        padding: 2rem;
+    }
+}

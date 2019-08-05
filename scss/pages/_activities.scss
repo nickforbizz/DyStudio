@@ -1,87 +1,76 @@
-
-.activities__about
-{
+.activities__about {
     margin: 14rem 0;
-    font-size: 1.6rem; 
-
-    &--btn
-    {
+    font-size: 1.6rem;
+    &--btn {
         margin-left: 3rem;
         margin-top: 4rem;
     }
-
-    &__img--top
-    {
+    &__img--top {
         margin-top: -11rem;
-
-        @media only screen and (max-width: 770px)
-        {
+        @media only screen and (max-width: 770px) {
             display: none;
         }
     }
 }
 
-.activities_container
-{
+.activities_container {
     position: relative;
-    &__header
-    {
-
-        h3
-        {
-            @include bg-text($color-primary, $color-secondary); 
+    &__header {
+        h3 {
+            @include bg-text($color-primary, $color-secondary);
         }
     }
-
-    &__box
-    {
-        &--tab
-        {
+    &__box {
+        &--tab {
             position: relative;
             height: 30rem;
+            &--item {
+                // padding: 2rem;
+                width: 72%;
+                height: -webkit-fill-available;
+                &--img {
+                    height: 20rem;
+                    background-image: url("../../imgs/black_skull-wallpaper-2560x1440.jpg");
+                    background-size: cover;
+                    background-position: top center;
+                }
+                h3 {
+                    margin: 1rem 0 0 3rem;
+                    span {
+                        border-bottom-left-radius: 0rem;
+                        border-bottom: .1rem solid;
+                        padding: 2rem;
+                    }
+                }
+            }
         }
-        &--side 
-        {
+        &--side {
             position: absolute;
             height: inherit;
             top: -3rem;
             width: 35%;
             background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
             right: -3rem;
-
-            ul
-            {
-                width: -webkit-fill-available; 
+            ul {
+                width: -webkit-fill-available;
                 margin: 0;
             }
-
-
-
-            @media only screen and (max-width: 770px)
-            {
+            @media only screen and (max-width: 770px) {
                 display: inline;
                 top: 23rem;
                 width: fit-content;
                 height: fit-content;
                 right: 0;
-
             }
         }
     }
-
-    &__details
-    {
+    &__details {
         padding: 1rem;
-
-        &--head
-        {
-            h3
-            {
+        &--head {
+            h3 {
                 position: relative;
                 padding-bottom: 5rem;
-
-                span
-                {
+                span {
                     padding: 1.7rem;
                     min-width: 11rem;
                     color: $color-white;
@@ -91,27 +80,34 @@
                 }
             }
         }
-
-        &--text
-        {
+        &--text {
             text-align: -webkit-right;
             margin-top: 4rem;
         }
-
         @media screen and (max-width: 700px) {
             margin-top: 10rem;
         }
     }
-
-    &__more
-    {
+    &__more {
         border-top: 2px solid gainsboro;
         margin: 6rem;
+        span {
+            font-weight: 600;
+            font-size: 2rem;
+        }
     }
 }
 
-
-.activities_cat
-{
+.activities_cat {
     margin: 10rem 0;
+}
+
+.search {
+    position: relative;
+    margin: 0 0 7rem 0;
+    &-smart {
+        border-radius: 4rem;
+        width: 24rem;
+        padding: .7rem;
+    }
 }

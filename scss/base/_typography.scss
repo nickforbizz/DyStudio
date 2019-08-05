@@ -1,55 +1,48 @@
-
-main
-{
+main {
     position: relative;
 }
-section
-{
+
+section {
     margin-top: 8rem;
     min-height: 30rem;
 }
 
-.icon-lg
-{
+.icon-lg {
     font-size: xx-large;
     padding: 1rem
 }
 
-.elem--header{
+.elem--header {
     color: $color-grey-white;
 }
-.h-primary
-{ 
+
+.h-primary {
     padding: 0rem 1rem;
     @include bg-text($color-primary, $color-secondary);
-    
 }
 
-.outer-skew
-{
+.outer-skew {
     transform: skewY(-7deg);
-    background-image: linear-gradient(to bottom right, $color-primary, $color-secondary),
-    url("../../imgs/dj_mouse-wallpaper-1920x1080.jpg");
+    background-image: linear-gradient(to bottom right, $color-primary, $color-secondary), url("../../imgs/dj_mouse-wallpaper-1920x1080.jpg");
     margin-top: 18rem;
     margin-bottom: 18rem;
 }
 
-.inner-skew
-{
+.inner-skew {
     transform: skewY(7deg);
     margin: 10rem 0;
     color: $color-grey-white;
     z-index: 22;
 }
 
-footer
-{
+footer {
     background-image: linear-gradient(to bottom right, $color-primary, $color-secondary);
     padding: 7rem;
     color: $color-grey-white;
-
 }
 
-
-
-
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}

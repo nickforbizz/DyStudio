@@ -1,34 +1,24 @@
 // events pages
-.event-card
-{
+.event-card {
     height: 41rem;
     margin: 1rem 0;
-
-    &__inner
-    {
+    &__inner {
         margin: 1rem;
         background-color: $color-dark;
         height: 98%;
         position: relative;
         overflow: hidden;
         transform: all 1s ease;
-
-        &:hover &--textlink
-            {
+        &:hover &--textlink {
             top: 10%;
-
-            }
-
-        &--textlink
-        {
+        }
+        &--textlink {
             position: absolute;
             text-align: -webkit-center;
             left: 50%;
             transform: translateX(-50%);
             top: 100%;
-         
-            h4 button
-            {
+            h4 button {
                 position: absolute;
                 top: 2rem
             }
@@ -36,21 +26,59 @@
     }
 }
 
-.booking
-{
+.booking {
     margin-bottom: 12rem;
 }
-.events-booking
-{
-    .outer-layer
-    {
+
+.events-booking {
+    .outer-layer {
         background-image: url("../../imgs/camouflage_desktop-wallpaper-2560x1440.jpg");
         background-size: cover;
         padding: 4rem 0;
     }
 }
 
-#contact-form
-{
+#contact-form {
     margin-bottom: 2rem;
+}
+
+// bookings
+.event {
+    &-cardbox {
+        border: 1px solid grey;
+        padding: 13px 10px;
+        border-radius: 11px;
+        height: 16rem;
+        margin-bottom: 2rem;
+    }
+    &-details {
+        display: -webkit-box;
+    }
+    &-img {
+        overflow: hidden;
+        img {
+            height: 10rem;
+            width: 10rem;
+            border-radius: 50%;
+        }
+    }
+    &-dated {
+        padding-left: 3rem;
+    }
+    &-date {
+        padding-bottom: 2rem;
+    }
+    &-organiser {
+        padding: 0 .2rem 1rem 4.5rem;
+        margin-top: -1rem;
+    }
+    &-more {
+        button {
+            padding: 1rem;
+        }
+    }
+}
+
+.tabs-events {
+    margin: 2rem 0 0 0;
 }
