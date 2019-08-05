@@ -7,10 +7,10 @@ window.onscroll = function() {
 function scrollFunction() {
 
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("to-top ").style.display = "block ";
+        document.getElementById("to-top").style.display = "block ";
         $(".nav").addClass("shadow");
     } else {
-        document.getElementById("to-top ").style.display = "none ";
+        document.getElementById("to-top").style.display = "none ";
         $(".nav").removeClass("shadow");
     }
 }

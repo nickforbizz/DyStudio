@@ -607,7 +607,8 @@ blockquote {
   list-style: none;
   padding: 3rem; }
   .navtabs li a {
-    padding: 1rem; }
+    padding: 1rem;
+    text-decoration: none; }
 
 .about {
   margin-bottom: 2rem; }
